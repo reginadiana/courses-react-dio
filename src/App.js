@@ -1,11 +1,11 @@
 import React from 'react';
-import Button from './Button'
+import Button from './Button';
 
 function App() {
   return (
     <div className="App">
-     ola diana
-    <Button />
+      ola diana
+      <Button />
     </div>
   );
 }
