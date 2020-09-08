@@ -30,5 +30,6 @@ O default é development.
 
 **None:** não passamos nenhuma configuração
 
-1. Chaves (keys) devem ser unicas apenas entre elementos irmãos 
-2. O parametro **e** registra o que aconteceu em um evento
+:memo: Chaves (keys) devem ser unicas apenas entre elementos irmãos 
+
+:memo: O parametro **e** registra o que aconteceu em um evento
