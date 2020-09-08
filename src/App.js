@@ -1,29 +1,42 @@
 import React from 'react';
 
-const buttonHistoryClient = <button>Histórico de cliente</button>;
-const buttonAddClient = <button>Cadastrar cliente</button>;
-const hasCustomer = true;
+// mostrar as slikks
+// mostrar um botao com o id de cada cliente
 
-const App = () => {
+const listCustomers = [
+  {
+    id: '1',
+    name: 'Diana Regina',
+    skills: ['React, Node, Html']
+  },
+  {
+    id: '2',
+    name: 'Bruno Cordeiro',
+    skills: []
+  }
+];
 
-  const renderShowHistory = () =>
-    <div>Historico de clientes, clique abaixo:
-      {buttonHistoryClient}
-    </div>;
+const App = () => { 
+  const renderCustomers = (customer) => {
+    return( 
+      <div key={`customer-${customer.id}`}>
+        <li>{customer.name} <button onClick={() => deleteCustomer(customer.id)}>X</button></li>
+        {customer.skills.map(renderSkills)}
+      </div>
+    );
+  };
 
-  const renderAddCustomer = () =>
-    <div>Clique abaixo para cadastrar um cliente:
-      {buttonAddClient}
-    </div>;
+  const deleteCustomer = (id) => {
+    alert(id);
+  }; 
 
-  const customer = 'Diana Regina';
-
-  const showCustomer = () => hasCustomer ? customer : 'Sem cliente';
+  const renderSkills = (skill, index) => <li key={index}>{skill}</li>;
 
   return (
     <div className="App">
-      {showCustomer()}
-      {hasCustomer ? renderShowHistory() : renderAddCustomer() }
+      <ul>
+        {listCustomers.map(renderCustomers)}
+      </ul>
     </div>
   );
 };
