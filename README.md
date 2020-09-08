@@ -1,3 +1,5 @@
+![](https://blog.dankicode.com/wp-content/uploads/2019/07/o-que-e%CC%81-react-js.png)
+
 ### Boas práticas de React
 
 1. Tente deixar os componentes da forma re-utilizavel possível 
@@ -21,7 +23,7 @@ Principais conceitos do Webpack:
 
 :large_blue_circle: **Plugins:** podem ser usados para otimização de pacotes, minificação, injeção de scripts e etc
 
-:large_blue_circle: Mode - utilizado para abordagem de configuração do zero. É possivel configurar módulos como production, development ou none.
+:large_blue_circle: **Mode:** utilizado para abordagem de configuração do zero. É possivel configurar módulos como production, development ou none.
 O default é development.
 
 **Production:** trás otmizações internas e gera um arquivo final.
