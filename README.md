@@ -1,4 +1,4 @@
-![](https://blog.dankicode.com/wp-content/uploads/2019/07/o-que-e%CC%81-react-js.png)
+<img src="https://blog.dankicode.com/wp-content/uploads/2019/07/o-que-e%CC%81-react-js.png" width="1200"/>
 
 ### Boas práticas de React
 
