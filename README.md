@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://blog.dankicode.com/wp-content/uploads/2019/07/o-que-e%CC%81-react-js.png" width="1200"/>
 
-## Available Scripts
+### Boas práticas de React
 
-In the project directory, you can run:
+1. Tente deixar os componentes da forma re-utilizavel possível 
+2. Use mocks para arrays, listas, etc que retornam dados fake
+3. Tente organizar os componentes em hierarquia
 
-### `yarn start`
+### Anotações sobre o curso básico
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Webpack
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Webpack é um **empacotador de módulos** para aplicações JS em um unico arquivo. Ele suporta fontes, css, imagens, 
+html, js e plugins.
 
-### `yarn test`
+Principais conceitos do Webpack:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+:large_blue_circle: **Entry:** utilizando grafo, o webpack precisa de um ponto de entra para buscar todos os módulos e dependencias 
 
-### `yarn build`
+:large_blue_circle: **Output:** para determinar quais são os módulos que ele vai exportar
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+:large_blue_circle: **Loaders:** para permitir que o webpack gerencie arquivos que não são do tipo js
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+:large_blue_circle: **Plugins:** podem ser usados para otimização de pacotes, minificação, injeção de scripts e etc
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+:large_blue_circle: **Mode:** utilizado para abordagem de configuração do zero. É possivel configurar módulos como production, development ou none.
+O default é development.
 
-### `yarn eject`
+**Production:** trás otmizações internas e gera um arquivo final.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Development:** é executa 3 plugins básicos 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**None:** não passamos nenhuma configuração
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+:memo: Chaves (keys) devem ser unicas apenas entre elementos irmãos 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+:memo: O parametro **e** registra o que aconteceu em um evento
