@@ -41,6 +41,9 @@ O default é development.
 ### Desenvolvimento de aplicações para internet com ReactJS
 
 **Stateful:** Usa estados, possui gerenciamento de estados no componente e é construído usando classes em JS. É o **ciclo de vida** no React
+
 **Stateless:** Não usa estados, não possui gerenciamento de estados no componentes e é construido usando funções em JS. Usado para renderizar imagens, textos comuns, etc
 
 **Formulários** matem um estado interno ao próprio DOM
+
+A diferença ao utilizar o _useState_ invés de uma variável comum é poder dizer ao React que quando essa variável mudar ele precisa renderizar novamente os componentes dependentes dela.
